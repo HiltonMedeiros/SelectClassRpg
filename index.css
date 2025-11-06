@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+    /* --- BACKGROUND PARA O BODY (PÁGINA INTEIRA) --- */
+    background-image: url('img/mapa.png'); /* O caminho para a imagem que você salvou */
+    background-size: cover;       /* Cobre toda a área do body */
+    background-position: center;  /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* O background permanece fixo ao rolar */
+
+    color: #ed9033; /* Cor de texto padrão para o body, pode ser ajustada */
+
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#titulos{
+    background-color: #392210;
+    text-align: center; 
+}
+#titulos h1,h2{
+  
+    padding: 1%;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Aqui agrupamos TUDO que os 3 anúncios têm em comum.
+  Isso inclui as correções para a expansão.
+*/
+#anuncio1, #anuncio2, .anuncio3 {
+    /* Estilos de layout que você já tinha */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1%;
+    padding-bottom: 2%;
+
+    /* ----- AS 3 LINHAS DA CORREÇÃO ----- */
+
+    /* 1. Define um limite de largura fixo */
+    width: 380px; 
+
+    /* 2. Força a quebra de palavras "gigantes" */
+    word-break: break-all; 
+
+    /* 3. Permite que o item flex encolha */
+    min-width: 0; 
+}
+
+/* Agora, os seletores individuais cuidam APENAS 
+  do que é único: a cor de fundo.
+*/
+
+#anuncio1, #anuncio2 {
+    background-color: #3A5A40; /* Verde-Musgo */
+}
+
+.anuncio3 {
+    background-color: #7D2121; /* Vinho */
+}
+
+img{
+    height: 450px;
+    width: 350px;
+    border-style:groove;
+    border-radius: 50%
+}
+
+a{
+
+   text-decoration: none; /* Remove sublinhado padrão */
+    font-weight: bold;    /* Deixa o texto mais encorpado */
+    text-transform: uppercase; /* Coloca em maiúsculas (opcional, mas comum) */
+
+    background-color: #A07A4A; /* <-- Marrom dourado/caramelo (cor de madeira/couro claro) */
+    color: #4E2A1B;         /* <-- Cor do texto do botão (marrom escuro) */
+    
+    padding: 10px 20px;     /* Espaçamento interno */
+    border-radius: 5px;     /* Bordas levemente arredondadas */
+    
+    border: 2px solid #7D5B3A; /* <-- Borda sutil para definir o botão */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidade */
+    
+    transition: all 0.2s ease-in-out; /* Transição suave para o efeito hover */
+
+}
+
+a:hover{
+    background-color: #C0A06B; /* <-- Um pouco mais claro no hover */
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6); /* Sombra mais pronunciada */
+    transform: translateY(-2px); /* Efeito de "levantar" um pouco */
+}
+
+/* --- Estilos do Rodapé --- */
+.site-footer {
+    background-color: #392210;        /* Cor de texto "pergaminho claro" */
+    text-align: center;
+    padding: 25px 0;           
+    margin-top: 50px;          
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 1.3rem; 
+}
+
+
