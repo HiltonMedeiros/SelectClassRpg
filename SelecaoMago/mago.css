@@ -1,0 +1,148 @@
+/* --- 1. SEUS ESTILOS BASE (Globais) ---
+*/
+
+/* 1.1 Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* 1.2 Reset Básico e Estilo do Body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Fundo escuro para o clima medieval */
+    background-color: #2a1a0e;
+    background-image: radial-gradient(circle, #5a3a1f, #392210);
+    
+    color: #ed9033; /* Cor global do texto (clara) */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faz o <main> (conteúdo) crescer para empurrar 
+   o rodapé para o fim da página.
+*/
+main {
+    flex-grow: 1;
+}
+
+/* 1.3 Estilo do Cabeçalho (Títulos) */
+#titulos {
+    background-color: #2a1a0e;
+    text-align: center; 
+    padding: 10px 0;
+}
+#titulos h1, #titulos h2 {
+    padding: 1%;
+    margin: 0; /* Reset de margem */
+}
+#titulos h1 {
+    font-size: 2.5rem;
+}
+#titulos h2 {
+    font-size: 1.2rem;
+    color: #A07A4A; /* Cor mais suave para o subtítulo */
+}
+
+/* 1.4 Estilo Global de Links (Botões) */
+a {
+    text-decoration: none; 
+    font-weight: bold;   
+    text-transform: uppercase; 
+    background-color: #A07A4A; 
+    color: #4E2A1B;           
+    padding: 10px 20px;    
+    border-radius: 5px;    
+    border: 2px solid #7D5B3A; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+    transition: all 0.2s ease-in-out; 
+    display: inline-block; /* Importante para aplicar padding/margem */
+}
+
+a:hover {
+    background-color: #C0A06B; 
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6); 
+    transform: translateY(-2px); 
+}
+
+/* 1.5 Estilo Global do Rodapé */
+.site-footer {
+    background-color: #2a1a0e;      
+    text-align: center;
+    padding: 25px 0;         
+    width: 100%;
+}
+.site-footer p {
+    margin: 5px 0;
+    font-size: 1.3rem; 
+}
+
+/* --- 2. ESTILOS ESPECÍFICOS DA PÁGINA "MAGA" ---
+*/
+
+/* O contêiner da "ficha" da classe */
+.ficha-classe {
+    /* Esta é a nossa "página" ou "pergaminho" feito com CSS */
+    background-color: #fcf5e1; /* Cor de pergaminho claro */
+    color: #4E2A1B; /* Cor do texto (marrom escuro) */
+    
+    border: 10px solid #7D2121; /* Borda vinho/mogno */
+    border-image: linear-gradient(to bottom, #A07A4A, #7D5B3A) 1; /* Borda dourada/bronze */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Sombra para destacar */
+
+    max-width: 900px; /* Largura máxima da ficha */
+    margin: 50px auto;  /* Centraliza horizontalmente e dá espaço */
+    padding: 40px;
+    border-radius: 8px; /* Cantos levemente arredondados */
+}
+
+.ficha-classe h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 3px solid #A07A4A;
+    padding-bottom: 10px;
+}
+
+.ficha-classe h3 {
+    font-size: 1.8rem;
+    color: #7D2121; /* Destaque em vinho */
+    margin-top: 30px;
+}
+
+.ficha-classe p, .ficha-classe li {
+    font-size: 1.2rem; /* Tamanho de fonte maior para leitura */
+    line-height: 1.7;  /* Espaçamento entre linhas confortável */
+}
+
+.ficha-classe ul {
+    list-style: none; /* Remove bolinhas */
+    padding-left: 0;
+}
+
+.ficha-classe li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px; /* Espaço para o ícone */
+}
+
+/* Adiciona um ícone de "estrela" antes de cada habilidade */
+.ficha-classe li::before {
+    content: '✨'; /* Ícone de magia */
+    position: absolute;
+    left: 0;
+    top: 0px;
+    font-size: 1.3rem;
+}
+
+/* Centraliza o botão no final da ficha */
+.ficha-classe .container-botao {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #A07A4A;
+}

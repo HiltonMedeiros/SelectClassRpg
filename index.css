@@ -65,10 +65,12 @@ body{
 */
 
 #anuncio1, #anuncio2 {
+    border: solid rgb(0, 0, 0) 3px;
     background-color: #3A5A40; /* Verde-Musgo */
 }
 
 .anuncio3 {
+    border: solid rgb(0, 0, 0) 3px;
     background-color: #7D2121; /* Vinho */
 }
 

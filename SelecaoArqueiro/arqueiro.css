@@ -1,0 +1,150 @@
+/* --- 1. SEUS ESTILOS BASE (Globais) ---
+*/
+
+/* 1.1 Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+/* 1.2 Reset Básico e Estilo do Body */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    /* Fundo escuro para o clima medieval */
+    background-color: #2a1a0e;
+    background-image: radial-gradient(circle, #5a3a1f, #392210);
+    
+    color: #ed9033; /* Cor global do texto (clara) */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+/* 1.3 Estilo do Cabeçalho (Títulos) */
+#titulos {
+    background-color: #392210;
+    text-align: center; 
+    padding: 10px 0;
+}
+#titulos h1, #titulos h2 {
+    padding: 1%;
+    margin: 0; 
+}
+#titulos h1 {
+    font-size: 2.5rem;
+}
+#titulos h2 {
+    font-size: 1.2rem;
+    color: #A07A4A; 
+}
+
+/* 1.4 Estilo Global de Links (Botões) */
+a {
+    text-decoration: none; 
+    font-weight: bold;   
+    text-transform: uppercase; 
+    background-color: #A07A4A; 
+    color: #4E2A1B;           
+    padding: 10px 20px;    
+    border-radius: 5px;    
+    border: 2px solid #7D5B3A; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+    transition: all 0.2s ease-in-out; 
+    display: inline-block; 
+}
+
+a:hover {
+    background-color: #C0A06B; 
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.6); 
+    transform: translateY(-2px); 
+}
+
+/* 1.5 Estilo Global do Rodapé */
+.site-footer {
+    background-color: #392210;      
+    text-align: center;
+    padding: 25px 0;         
+    width: 100%;
+}
+.site-footer p {
+    margin: 5px 0;
+    font-size: 1.3rem; 
+}
+
+/* --- 2. ESTILOS ESPECÍFICOS DA PÁGINA "ARQUEIRO" ---
+*/
+
+/* O contêiner da "ficha" da classe */
+.ficha-classe {
+    background-color: #fcf5e1; /* Cor de pergaminho claro */
+    color: #4E2A1B; /* Cor do texto (marrom escuro) */
+    
+    /* --- MUDANÇA TEMÁTICA --- */
+    /* Trocamos a borda vinho da Maga por um VERDE FLORESTA */
+    border: 10px solid #3A5A40; 
+    /* Trocamos o gradiente para tons de COURO/MADEIRA */
+    border-image: linear-gradient(to bottom, #8B4513, #5D4037) 1; 
+    
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); 
+    max-width: 900px; 
+    margin: 50px auto;  
+    padding: 40px;
+    border-radius: 8px; 
+}
+
+.ficha-classe h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 3px solid #A07A4A;
+    padding-bottom: 10px;
+}
+
+.ficha-classe h3 {
+    font-size: 1.8rem;
+    /* --- MUDANÇA TEMÁTICA --- */
+    /* Cor do subtítulo para combinar com a borda verde */
+    color: #3A5A40; 
+    margin-top: 30px;
+}
+
+.ficha-classe p, .ficha-classe li {
+    font-size: 1.2rem; 
+    line-height: 1.7;  
+}
+
+.ficha-classe ul {
+    list-style: none; 
+    padding-left: 0;
+}
+
+.ficha-classe li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 35px; /* Espaço para o ícone */
+}
+
+/* --- MUDANÇA TEMÁTICA --- */
+/* Trocamos o ícone '✨' da Maga por um '🎯' de alvo */
+.ficha-classe li::before {
+    content: '🎯'; /* Ícone de alvo */
+    position: absolute;
+    left: 0;
+    top: 0px;
+    font-size: 1.3rem;
+}
+
+/* Centraliza o botão no final da ficha */
+.ficha-classe .container-botao {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #A07A4A;
+}
