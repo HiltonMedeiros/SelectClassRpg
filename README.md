@@ -2,8 +2,6 @@
 
 Este projeto é um site estático focado na **Seleção de Classes** para um jogo fictício de RPG Medieval. O objetivo é apresentar ao jogador as classes disponíveis (Maga, Arqueiro e Elfo) em páginas de detalhes ricas e temáticas.
 
-Este trabalho foi desenvolvido como projeto para a disciplina de [Nome da Disciplina] da **UEPB - CD TURMA 2**.
-
 ## 🖥️ Demonstração
 
 Recomenda-se adicionar um screenshot da sua página principal ou das "fichas" de classe aqui para dar uma prévia visual do projeto.
