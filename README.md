@@ -2,14 +2,6 @@
 
 Este projeto é um site estático focado na **Seleção de Classes** para um jogo fictício de RPG Medieval. O objetivo é apresentar ao jogador as classes disponíveis (Maga, Arqueiro e Elfo) em páginas de detalhes ricas e temáticas.
 
-## 🖥️ Demonstração
-
-Recomenda-se adicionar um screenshot da sua página principal ou das "fichas" de classe aqui para dar uma prévia visual do projeto.
-
-*(Opcional: Adicione um screenshot. No GitHub, você pode simplesmente arrastar e soltar uma imagem no editor de texto do README)*
-
-``
-
 ## ✨ Funcionalidades
 
 * **Página Principal (`index.html`):** Uma página de "splash" que apresenta as 3 classes lado a lado para seleção (baseado no seu código original).
@@ -44,5 +36,6 @@ Como este é um projeto puramente estático (HTML/CSS), não há necessidade de 
 3.  Abra o arquivo `index.html` (ou qualquer um dos outros arquivos `.html`) diretamente no seu navegador de preferência (Ex: Google Chrome, Firefox).
 
 ## 👩‍💻 Autor
+Hilton Medeiros Amorim
 
 * **Hilton Medeiros Amorim**
