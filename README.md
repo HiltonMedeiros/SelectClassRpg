@@ -36,6 +36,6 @@ Como este é um projeto puramente estático (HTML/CSS), não há necessidade de 
 3.  Abra o arquivo `index.html` (ou qualquer um dos outros arquivos `.html`) diretamente no seu navegador de preferência (Ex: Google Chrome, Firefox).
 
 ## 👩‍💻 Autor
-Hilton Medeiros Amorim
+
 
 * **Hilton Medeiros Amorim**
